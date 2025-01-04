@@ -5,6 +5,13 @@ Imprime los valores con su indice correspondiente
 */
 package main
 
-func main() {
+import "fmt"
 
+func main() {
+	var numeros [5]int
+	for i := 0; i < len(numeros); i++ {
+		fmt.Println("Introduce el numero de la casilla", i)
+		fmt.Scan(&numeros[i])
+	}
+	fmt.Println(numeros)
 }
