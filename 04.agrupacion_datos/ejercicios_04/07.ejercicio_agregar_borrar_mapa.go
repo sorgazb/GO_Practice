@@ -9,6 +9,18 @@ Pidele al usuario el nombre del contacto a borrar y luego imprime el mapa acuali
 */
 package main
 
-func main() {
+import "fmt"
 
+func main() {
+	mapa := map[string][]int{
+		"Sergio": {1212121, 1212121},
+		"Pedro":  {1212121, 1212121},
+		"Juan":   {1234567, 12313131313},
+	}
+
+	fmt.Println(mapa)
+
+	delete(mapa, "Juan")
+
+	fmt.Println(mapa)
 }

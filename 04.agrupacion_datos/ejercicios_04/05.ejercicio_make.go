@@ -10,6 +10,16 @@ Imprime el contenido del slice con sus indices y sus valores
 */
 package main
 
-func main() {
+import "fmt"
 
+func main() {
+	sliceNombres := make([]string, 5, 10)
+	fmt.Println(sliceNombres)
+
+	for i := 0; i < len(sliceNombres); i++ {
+		fmt.Println("Introduce el nombre de los alumnos del slice")
+		fmt.Scan(&sliceNombres[i])
+	}
+
+	fmt.Println(sliceNombres)
 }

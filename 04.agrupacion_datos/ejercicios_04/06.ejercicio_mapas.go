@@ -7,6 +7,13 @@ Pista, usa un slice para guardar los telefonos
 */
 package main
 
-func main() {
+import "fmt"
 
+func main() {
+	mapa := map[string][]int{
+		"Sergio": {1212121, 1212121},
+		"Pedro":  {1212121, 1212121},
+	}
+
+	fmt.Println(mapa)
 }
